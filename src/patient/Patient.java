@@ -10,4 +10,19 @@ public class Patient {
         this.appointmentDate = appointmentDate;
         this.medicalHistory = medicalHistory;
     }
+    public String getName() {
+        return name;
+    }
+
+    public String getAppointmentDate() {
+        return appointmentDate;
+    }
+
+    public String getMedicalHistory() {
+        return medicalHistory;
+    }
+
+    public void setMedicalHistory(String medicalHistory) {
+        this.medicalHistory = medicalHistory;
+    }
 }
