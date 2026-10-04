@@ -14,3 +14,32 @@ public class HospitalSystem {
 
         Doctor doctor = new Doctor("Dr. Sarah");
         Receptionist receptionist = new Receptionist("Mary");
+        System.out.println(" RECEPTIONIST");
+        receptionist.viewBasicDetails(patient);
+
+        System.out.println();
+
+        System.out.println("DOCTOR");
+        doctor.viewMedicalInformation(patient);
+
+        System.out.println();
+
+        System.out.println(" UPDATE MEDICAL INFORMATION ");
+        doctor.updateMedicalInformation(
+                patient,
+                "Patient has hypertension and is responding well to treatment."
+        );
+
+        System.out.println("Medical information updated.");
+
+        System.out.println();
+
+        doctor.viewMedicalInformation(patient);
+
+        System.out.println();
+
+        System.out.println("ADMINISTRATION");
+        Finance finance = new Finance(50000000);
+        finance.displayFinancialRecords();
+    }
+}
