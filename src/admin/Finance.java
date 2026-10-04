@@ -6,4 +6,7 @@ public class Finance {
     Finance(double hospitalRevenue) {
         this.hospitalRevenue = hospitalRevenue;
     }
+    protected void displayFinancialRecords() {
+        System.out.println("Hospital Revenue: UGX " + hospitalRevenue);
+    }
 }
